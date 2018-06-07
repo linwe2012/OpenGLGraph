@@ -1,0 +1,7 @@
+﻿  OpenGLGraph.cpp
+e:\codes\vcrepos\openglt3\openglt3\shader.h(52): warning C4101: 'infoLog': unreferenced local variable
+e:\codes\vcrepos\openglt3\openglt3\shader.h(51): warning C4101: 'success': unreferenced local variable
+e:\codes\vcrepos\openglt3\openglt3\openglgraph.cpp(74): warning C4390: ';': empty controlled statement found; is this the intent?
+e:\codes\vcrepos\openglt3\openglt3\openglgraph.cpp(106): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+e:\codes\vcrepos\openglt3\openglt3\openglgraph.cpp(107): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+  OpenGLT3.vcxproj -> E:\Codes\VCRepos\OpenGLT3\Debug\OpenGLT3.exe
