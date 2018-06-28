@@ -34,5 +34,6 @@ If `VCRUNTIME140.dll` missing, please download [Visual C++ Redistributable for V
 
 # Wiki
 - [Compile](https://github.com/linwe2012/CProject/wiki/How-To-Compile)
-- Featured Functions Intro
+- [Featured Functions Intro](https://github.com/linwe2012/OpenGLGraph/wiki/Feature-Function-Intro)
 - [Dynamic Object](https://github.com/linwe2012/OpenGLGraph/wiki/Dynamic-Object)(Major Data type)
+- [How Some Function Works](https://github.com/linwe2012/OpenGLGraph/wiki/Miscellaneous-Implementations)
