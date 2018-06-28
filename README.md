@@ -21,7 +21,7 @@ To see demos:
 Note that Camera is default turned on, press `esc` to turn off.
 
 If you don't wanna compile it. [download](https://github.com/linwe2012/OpenGLGraph/releases) compiled version of these demos.
-Don't forget to copy `freetype.dll` to `C:\\Windows\\SysWOW64` since this is a 32bit lib.
+Don't forget to copy `freetype.dll` to `C:\Windows\SysWOW64` or any directory your system stores 32bits `dll` files. Or [downlaod freetype](https://www.freetype.org/) compatibale to your computer.
 If `VCRUNTIME140.dll` missing, please download [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)  install x86 version.
 
 
