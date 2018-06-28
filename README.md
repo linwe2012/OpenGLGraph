@@ -37,3 +37,6 @@ If `VCRUNTIME140.dll` missing, please download [Visual C++ Redistributable for V
 - [Featured Functions Intro](https://github.com/linwe2012/OpenGLGraph/wiki/Feature-Function-Intro)
 - [Dynamic Object](https://github.com/linwe2012/OpenGLGraph/wiki/Dynamic-Object)(Major Data type)
 - [How Some Function Works](https://github.com/linwe2012/OpenGLGraph/wiki/Miscellaneous-Implementations)
+
+# Thanks 
+- [learnopengl](https://learnopengl.com/) has taught me how to use OpenGL and I use his `shader`. And my `camera` class is modified upon his version
