@@ -13,6 +13,7 @@ I have tried my best to make it compatible to the original library.
 - Mouse positon is inaccurate
 - Text rendering is buggy
 - All color must be registered before use, i will add colors to it.
+- Key board Iput is buggy cuz every time it refresh will scan the keys.
 
 # Wiki
 - [Compile](https://github.com/linwe2012/CProject/wiki/How-To-Compile)
