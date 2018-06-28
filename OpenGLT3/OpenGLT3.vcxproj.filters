@@ -7,50 +7,38 @@
     </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Primitives">
-      <UniqueIdentifier>{33b7c7e6-ee22-4a0c-9373-2a56ebccd910}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vertex.h">
-      <Filter>Source Files\Primitives</Filter>
-    </ClInclude>
-    <ClInclude Include="ShapeData.h">
-      <Filter>Source Files\Primitives</Filter>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ShapeGenerator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="shader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="OpenGLGraph.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DynamicObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="OpenGLGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OpenGLGraph.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="ShapeGenerator.cpp">
+      <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="glad.c">
-      <Filter>Source Files</Filter>
+      <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="ShapeGenerator.cpp">
-      <Filter>Source Files\Primitives</Filter>
-    </ClCompile>
-    <ClCompile Include="DynamicObject.cpp">
+    <ClCompile Include="OpenGLGraph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="test_painter.cpp">

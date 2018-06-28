@@ -45,6 +45,7 @@ void Main()
 	//InitGraphics();
 	cx = GetWindowWidth() / 2;
 	cy = GetWindowHeight() / 2;
+	SetPenColor(0x3121f0, 1.0f, 0x01ff1f);
 	DrawHouse(cx - HouseWidth / 2,
 		cy - (HouseHeight + AtticHeight) / 2);
 	DrawMen(cx,

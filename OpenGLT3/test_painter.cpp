@@ -6,7 +6,7 @@ void MouseEventProcess(int x, int y, int button, int event);
 
 void Main()
 {
-	//InitGraphics();
+	InitGraphics();
 	SetPenColor(0xeefffe);
 	registerMouseEvent(MouseEventProcess);
 	SetPenSize(pensz);

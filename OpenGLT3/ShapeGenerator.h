@@ -10,6 +10,7 @@
 #include <map>
 #include <string>
 #include "DynamicObject.h"
+
 #define INIT_VERTEX_AMOUNT
 const GLfloat ARC_RSOLUTION = GLGH_PI / 90.0f;
 
@@ -43,11 +44,17 @@ extern GLfloat glgh_current_color[2][3];
 extern GLfloat current_opacity[2];
 extern std::map<std::string, int>color_reference;
 extern DynamicObject<ellipseInfo>LinedEllipse;
+extern DynamicObject<ellipseInfo>FilledEllipse;
+extern TextObject FixedText;
+
 class ShapeGenerator
 {
 public:
 	ShapeGenerator();
 	//static ShapeData makeTriangle();
-	static void makeLine(std::vector<mLine> &VBO_Line, glm::vec3 start, glm::vec3 end);
-	static void makeEllipse(GLfloat _rx, GLfloat _ry, GLfloat _start, GLfloat _sweep, glm::vec3 _center = glm::vec3(0.0f, 0.0f, 0.0f), GLfloat _rotate = 0.0f, glm::vec3 _axis = glm::vec3(1.0f, 0.0f, 0.0f));
+	static void makeLine(std::vector<mLine> &VBO_Line, glm::vec3 start, glm::vec3 end, int ifdelete = FALSE);
+	static void makeEllipse(GLfloat _rx, GLfloat _ry, GLfloat _start, GLfloat _sweep, glm::vec3 _center = glm::vec3(0.0f, 0.0f, 0.0f), GLfloat _rotate = 0.0f, glm::vec3 _axis = glm::vec3(1.0f, 0.0f, 0.0f), int ifdelete = FALSE);
+	static void makeFilledEllipse(GLfloat _rx, GLfloat _ry, GLfloat _start, GLfloat _sweep, glm::vec3 _center = glm::vec3(0.0f, 0.0f, 0.0f), GLfloat _rotate = 0.0f, glm::vec3 _axis = glm::vec3(1.0f, 0.0f, 0.0f), int ifdelete = FALSE);
+	static void makeFixedText(const char *s, glm::vec3 pos, GLfloat scale, int ifdelete = FALSE);
+	static void makeFilledPolygon(glm::vec3 vtx, int ifends = FALSE, int ifdelete = FALSE);
 };

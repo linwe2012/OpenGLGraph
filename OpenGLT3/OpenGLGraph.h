@@ -13,19 +13,28 @@
 
 //1. Basics
 void InitGraphics(int _allowCamera = TRUE, int _anti_aliasing = TRUE);
+void InitConsole(void);
+//void FreeConsole(void);
 void MovePen(double x, double y, GLfloat z=0.0f);
 void DrawLine(double dx, double dy, GLfloat dz = 0.0f);
-void DrawEllipticalArc(double rx, double ry, double start, double sweep, int _startPosition = GLGH_LEFT, float _rotate = 0, glm::vec3 _axis = glm::vec3(1.0f, 0.0f, 0.0f));
+void DrawEllipticalArc(double rx, double ry, double start, double sweep, int _startPosition = GLGH_LEFT, float _rotate = 0.0f, glm::vec3 _axis = glm::vec3(1.0f, 0.0f, 0.0f));
 void DrawArc(double r, double start, double sweep);
+void DrawTextString(const char *text, int fixed = TRUE);
+double GetCurrentX();
+double GetCurrentY();
 
 double GetWindowWidth(void);
 double GetWindowHeight(void);
+void SetEraseMode(int mode);
+int GetEraseMode(void);
 
 //mouse position
-double GetCurrentX(void);
-double GetCurrentY(void);
+double GetMouseX(void);
+double GetMouseY(void);
 double ScaleXInches(int x);
 double ScaleYInches(int y);
+void WaitForMouseDown(void);
+void WaitForMouseUp(void);
 
 //deprecated
 void SetPenColor(std::string color);
@@ -37,9 +46,19 @@ void SetPenSize(int size);
 void SetPointSize(int size);
 void SetPointSize(float size);
 int GetPointSize(float *size=NULL);
+void StartFilledRegion(double density);
+void EndFilledRegion(void);
 
+//window functions
 void SetWindowTitle(const char* title);
+const char *GetWindowTitle(void);
 void ExitGraphics(void);
+
+void UpdateDisplay(void);
+void Pause(double seconds);
+double GetFullScreenWidth(void);
+double GetFullScreenHeight(void);
+void SetWindowSize(double width, double height);
 
 typedef void(*KeyboardEventCallback) (int key, int event);
 typedef void(*CharEventCallback) (char c);
@@ -84,7 +103,7 @@ void CancelCamera(int Mode= GLGH_BACK);
 //ScaleInchesToGLFloat(&x, &y);
 //MoveCamera(1.0, GLGH_LINEAR, float(x), float(y));
 void MoveCamera(
-	float time, //time cost to move (seconds)
+	float time,  //time cost to move (seconds)
 	int function = GLGH_SMOOTH_COS, //the way it moves ,smooth(cos), linear£¨GLGH_LINEAR), or instant (GLGH_INSTANT_COS).
 	float x = 0.0f, //destination x, please use function ScaleInchesToGLFloat() if you're using inches, then use float to reinforce a trasition from double to GLfloat
 	float y = 0.0f, //destination y
