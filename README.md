@@ -17,6 +17,7 @@ To see demos:
 - [painter](https://github.com/linwe2012/OpenGLGraph/blob/master/OpenGLT3/test_painter.cpp)
 - [some wird flowerlike shape](https://github.com/linwe2012/OpenGLGraph/blob/master/OpenGLT3/test_someflower.cpp)
 - [text](https://github.com/linwe2012/OpenGLGraph/blob/master/OpenGLT3/test_text.cpp)
+- [koch](https://github.com/linwe2012/OpenGLGraph/blob/master/OpenGLT3/kochsnow.cpp)
 
 Note that Camera is default turned on, press `esc` to turn off.
 
