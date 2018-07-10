@@ -14,10 +14,13 @@ Most codes that works on old graphic library just need minor adjustment and they
 
 To see demos:
 - [house](https://github.com/linwe2012/OpenGLGraph/blob/master/OpenGLT3/test_house.cpp)
+  ![test_house_3D](https://github.com/linwe2012/OpenGLGraph/blob/master/img/test_house_3D.png)
 - [painter](https://github.com/linwe2012/OpenGLGraph/blob/master/OpenGLT3/test_painter.cpp)
 - [some wird flowerlike shape](https://github.com/linwe2012/OpenGLGraph/blob/master/OpenGLT3/test_someflower.cpp)
+  ![test_flr](https://github.com/linwe2012/OpenGLGraph/blob/master/img/test_someflower.png)
 - [text](https://github.com/linwe2012/OpenGLGraph/blob/master/OpenGLT3/test_text.cpp)
 - [koch](https://github.com/linwe2012/OpenGLGraph/blob/master/OpenGLT3/kochsnow.cpp)
+  ![test_kochsnow](https://github.com/linwe2012/OpenGLGraph/blob/master/img/test_kochsnow.png)
 
 Note that Camera is default turned on, press `esc` to turn off.
 
